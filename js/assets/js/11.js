@@ -1,8 +1,8 @@
 /* --
 
-Consigne : A partir du tableau fourni, vous devez mettre en place un système d'authentification. Après avoir demandé
-à votre utilisateur  son EMAIL et MOT DE PASSE, et après avoir vérifié ses informations, vous lui souhaiterez la
-bienvenue avec son nom et prénom (document.write); 
+Consigne : A partir du tableau fourni, vous devez mettre en place un système d'authentification. 
+Après avoir demandé à votre utilisateur  son EMAIL et MOT DE PASSE, et après avoir vérifié ses informations, 
+vous lui souhaiterez la bienvenue avec son nom et prénom (document.write); 
 
 En cas d'échec, vous afficherez une ALERT pour l'informer de l'erreur. 
 

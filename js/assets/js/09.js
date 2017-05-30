@@ -34,3 +34,5 @@ document.write("<hr>");
 for(var x = 0 ; x <=Prenoms.length-1 ; x++ ){
      document.write("<p> <strong>" + Prenoms[x] + "</strong></p>");
 }
+
+var input =  ()
