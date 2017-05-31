@@ -1,13 +1,13 @@
 /* -------------------------------- Disponibilité du DOM ---------------------------------------
 
-A partir ou mon DOM, c'est a dire l'ensemble de l'arborescence de ma page est chargée, je peux
+A partir de mon DOM, c'est a dire l'ensemble de l'arborescence de ma page est chargée, je peux
 commencer à utiliser Jquery.
 Je vais mettre l'ensemble de mon code dans une fonction, cette fonction sera appelé AUTOMATIQUEMENT
 par Jquery lorsque le DOM sera entièrement défini.
 
 3 Façons de faire : 
 
- */ 
+*/ 
 
 // 1 -- Possibilité 1
 jQuery(document).ready(function(){

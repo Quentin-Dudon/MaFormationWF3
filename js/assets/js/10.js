@@ -87,7 +87,7 @@ l(PremierTrimestre);
 w("<ol>");
 // Je souhaite aficher la liste de mes étudiants. 
 
-for(i=0 ; i < PremierTrimestre.length ; i++){
+for(var i=0 ; i < PremierTrimestre.length ; i++){
 
     // -- On récupère l'Objet Etudiant de l'itération
     let Etudiant = PremierTrimestre[i]; 
