@@ -27,8 +27,12 @@ $(function() {
     // mettre à jour le tableau HTML, réintialiser  le formulaire et afficher une notification. 
     function ajouterContact(Contact) {
         Contacts.push(Contact);
-        
-    }
+        if(!isContact()){
+        $('.aucuncontact').replaceWith($("<tr><td>" + Contact.nom + "</td><td>" + Contact.prenom + "</td><td>" + Contact.email + "</td><td>" + Contact.tel + "</td>"));
+        }else{
+            $("<tr><td>" + Contact.nom + "</td><td>" + Contact.prenom + "</td><td>" + Contact.email + "</td><td>" + Contact.tel + "</td>").appendTo($('tbody'));
+        }   
+ }
     
     // -- Fonction RéinitialisationDuFormulaire() : Après l'ajout d'un contact, on remet le formulaire à 0!
     function reinitialisationDuFormulaire(){
@@ -39,7 +43,16 @@ $(function() {
     function afficheUneNotification() {}
 
     // -- Vérification de la présence d'un Contact dans Contacts 
-    function estCeQunContactEstPresent(Contact) {}
+    function estCeQunContactEstPresent(){
+        if($("#contact").find(".aucuncontact")){
+            return false;
+        }
+        else{
+            return true;
+        }
+
+        // si il y a une classe ".aucuncontact" renvoi true sinon renvoi false
+    }
 
     // -- Vérification de la validité d'un Email
     // : https://paulund.co.uk/regular-expression-to-validate-email-address
